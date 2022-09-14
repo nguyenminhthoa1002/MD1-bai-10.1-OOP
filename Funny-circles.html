@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="MyPoint.js"></script>
+</head>
+<body>
+<canvas id="myCanvas" width="1370px" height="650px" style="border: 1px solid #d3d3d3;"></canvas>
+<script>
+    let ctx = document.getElementById('myCanvas').getContext("2d");
+    let radius = Math.floor(Math.random() * 80);
+    let x = Math.random() * window.innerWidth;
+    let y = Math.random() * window.innerHeight;
+    let red = Math.floor(Math.random()*255);
+    let green = Math.floor(Math.random()*255);
+    let blue = Math.floor(Math.random()*255);
+    let color = "rgb(" + red + "," + blue + "," + green + ")";
+    let circle = new MyPoint(x, y, radius, color)
+    circle.drawCircle(ctx)
+    let circle2 = new MyPoint(x, y, radius, color);
+    circle2.drawCircle(ctx)
+</script>
+</body>
+</html>
