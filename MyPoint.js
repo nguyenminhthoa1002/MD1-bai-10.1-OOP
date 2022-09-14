@@ -42,7 +42,7 @@ class MyPoint {
     drawCircle(ctx){
         ctx.beginPath();
         ctx.fillStyle=this.color
-        ctx.arc(circle.x,circle.y,circle.radius,0,2*Math.PI);
+        ctx.arc(this.x,this.y,this.radius,0,2*Math.PI);
         ctx.fill();
         ctx.closePath();
         ctx.stroke();
