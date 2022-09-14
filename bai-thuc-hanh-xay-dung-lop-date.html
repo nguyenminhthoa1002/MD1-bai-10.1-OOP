@@ -35,10 +35,17 @@
       getYear(){
           return this.year;
       }
+      setDate(day,month,year) {
+          this.day=day;
+          this.month=month;
+          this.year=year;
+      }
+      toString() {
+          return this.day+"/"+this.month+"/"+this.year
+      }
   }
 
   let day1= new Date(2,2,2007);
-
 
 </script>
 </body>
